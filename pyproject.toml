@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "avantia"
+version = "0.1.0"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.8"}
+pymongo = "^4.11.1"
+requests = "^2.32.3"
+fuzzywuzzy = "^0.18.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
